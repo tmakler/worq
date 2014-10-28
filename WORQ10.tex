@@ -46,15 +46,21 @@ I know that if I make an isosceles triangle whose base has a slope of 1, the axi
 \psset{unit=0.5}
 \psaxes[labels=none]{->}(11,11)[$x$,-90][$y$,180]
 \psline{-}(1,1)(5,5)
-\psline{-}(3,3)(0,6)
+\psline[linestyle=dashed,dash=3pt 2pt](3,3)(0,6)
 \psline{-}(0,6)(1,1)
 \psline{-}(0,6)(5,5)
-
-
+\rput(-2,6){\psframebox*{$A(0,6)$}}
+\rput(3,1){\psframebox*{$B(1,1)$}}
+\rput(5,6){\psframebox*{$C(5,5)$}}
 \end{pspicture}
 \caption{The Initial Setup}
 \end{figure}
 
+To show that my coordinates satisfy the conditions, I can prove that the triangle is isosceles. If the axis of symmetry is perpendicular to the base, then the triangle is isosceles. To find this, we can find the slopes of the base and of the axis of symmetry.
 
+This equation shows the slope of the axis of symmetry:
+$$m=\frac{6-3}{0-3}$$
+$$m=\frac{3}{-3}$$
+$$m=-1$$
 
 \end{document}
