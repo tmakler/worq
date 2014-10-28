@@ -1,0 +1,91 @@
+\documentclass[a4paper]{article}
+
+\usepackage[english]{babel} 
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage{pst-all}
+\usepackage{caption}
+\usepackage{float}
+\usepackage{fullpage}
+
+\title{WORQ 9}
+
+\author{Theo Makler}
+
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\section{Problem A}
+
+The price of a necklace was first increased by $50\%$ and later decreased by $50\%$. Is the final price the same as the original price? Why or why not?
+
+To represent the price of the necklace, we can make it variable $a$. To show the price increasing and decreasing, we can show this equation:
+
+$$\left(a+.5a\right)\times.5$$
+
+To solve the equation, we simplify like so:
+
+$$1.5a\times.5$$
+
+$$.75a$$
+
+As these equations show, raising the price by $50\%$ and then lowering the price by $50\%$ makes the price $75\%$ of the original.
+
+\section{Problem C}
+
+Give the coordinates of point $D$ so that $ABCD$ is a parallelogram that is not a rhombus. Explain why the coordinates of point $D$ satisfy the conditions or argue that is is impossible to find such a point.
+
+To begin, I drew the graph with given information:
+
+\begin{figure}[h]
+\centering
+\begin{pspicture}(-3,-3)(5,5)
+\psset{unit=0.5}
+\psaxes[labels=none]{<->}(0,0)(-7,-5)(8,9)[$x$,-90][$y$,180]
+\psdot(0,0)
+\rput(-2,1){\psframebox*{$Point A$}}
+\psdot(6,0)
+\psline{-}(0,0)(3,-4)
+\psdot(3,-4)
+\psline{-}(3,-4)(6,0)
+\rput(3,-5){\psframebox*{$Point B$}}
+\rput(6,1){\psframebox*{$Point C$}}
+\end{pspicture}
+\end{figure}
+
+Given this information, is is impossible to find a point $D$ that makes the figure a parallelogram and not a rhombus because the line from point $A$ to point $B$ and the line from point $B$ to point $C$ are the same length. If we draw a vertical line from point $B$ at $(3,-4)$, then we see that there are two triangles like so:
+
+\begin{figure}[h]
+\centering
+\begin{pspicture}(-3,-3)(5,5)
+\psset{unit=0.5}
+\psaxes[labels=none]{<->}(0,0)(-7,-5)(8,9)[$x$,-90][$y$,180]
+\psdot(0,0)
+\rput(-2,1){\psframebox*{$Point A$}}
+\psdot(6,0)
+\psline{-}(0,0)(3,-4)
+\psdot(3,-4)
+\psline{-}(3,-4)(6,0)
+\rput(3,-5){\psframebox*{$Point B$}}
+\rput(6,1){\psframebox*{$Point C$}}
+\psline{-}(3,-4)(3,0)
+\end{pspicture}
+\end{figure}
+
+If we use the Pythagorean Theorem, we can find the lengths of the lines $AB$ and $BC$:
+
+$$a^2+b^2=c^2$$
+$$3^2+4^2=c^2$$
+$$9+16=c^2$$
+$$25=c^2$$
+$$5=c$$
+
+If $ABCD$ were a parallelogram, then $AD$ would have to be the same length as $BC$, and $CD$ would have to be the same length as $AB$.
+Because the two segments $AB$ and $BC$ are the same length, this would mean that all four sides had the same length, making the figure a rhombus.
+
+\end{document}
