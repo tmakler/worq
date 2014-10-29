@@ -36,9 +36,15 @@ From these equations, I have found that each of my units is 1.4 inches long. 2$\
 
 \section{Problem C}
 
-Give the coordinates of the vertices of and isosceles triangle whose axis of symmetry is not parallel to either axis. Show that your triangle is isosceles.
+Give the coordinates of the vertices of an isosceles triangle whose axis of symmetry is not parallel to either axis. Show that your triangle is isosceles.
 
-I know that if I make an isosceles triangle whose base has a slope of 1, the axis of symmetry will not be parallel to either axis. 
+I know that if I make an isosceles triangle whose base has a slope of 1, the axis of symmetry will not be parallel to either axis. Because of this, I started with a base that went from $(1,1)$ to $(5,5)$. The axis of symmetry has to be perpendicular to the base (i.e. have a slope of $-1$) and has to pass through the midpoint, which is $(3,3)$. Using point-slope formula, the equation of the line is :
+
+$$y-3=-1(x-3)$$
+$$y-3=-x+3$$
+$$y=-x+6$$
+
+Any point along the axis of symmetry (except $(3,3)$) will make an isosceles triangle with $(1,1)$ and $(5,5)$. I chose $(0,6)$ because it is the y-intercept. 
 
 \begin{figure}[h]
 \centering
@@ -46,28 +52,15 @@ I know that if I make an isosceles triangle whose base has a slope of 1, the axi
 \psset{unit=0.5}
 \psaxes[labels=none]{->}(11,11)[$x$,-90][$y$,180]
 \psline{-}(1,1)(5,5)
-\psline[linestyle=dashed,dash=3pt 2pt](3,3)(0,6)
+\psline[linestyle=dashed,dash=3pt 2pt](6,0)(-3,9)
 \psline{-}(0,6)(1,1)
 \psline{-}(0,6)(5,5)
 \rput(-2,6){\psframebox*{$A(0,6)$}}
 \rput(3,1){\psframebox*{$B(1,1)$}}
 \rput(5,6){\psframebox*{$C(5,5)$}}
 \end{pspicture}
-\caption{The Initial Setup}
 \end{figure}
 
-To show that my coordinates satisfy the conditions, I can prove that the triangle is isosceles. If the axis of symmetry is perpendicular to the base, then the triangle is isosceles. To find this, we can find the slopes of the base and of the axis of symmetry.
-
-This equation shows the slope of the axis of symmetry:
-$$m=\frac{6-3}{0-3}$$
-$$m=\frac{3}{-3}$$
-$$m=-1$$
-
-The slope of the axis of symmetry is -1. This is the equation for the slope of the base:
-$$m=\frac{5-1}{5-1}$$
-$$m=\frac{4}{4}$$
-$$m=1$$
-
-The slope of the base is 1. Because -1 is the opposite reciprocal of 1, the axis of symmetry is perpendicular to the base. This, and the fact that the lines $AB$ and $AC$ run from the same point on the axis of symmetry make the triangle $ABC$ an isosceles triangle.
+The answer for these points is $A=(0,6)$, $B=(1,1)$ and $C=(5,5)$. 
 
 \end{document}
