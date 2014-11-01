@@ -1,0 +1,65 @@
+\documentclass[a4paper]{article}
+
+\usepackage[english]{babel} 
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage{pst-all}
+\usepackage{caption}
+\usepackage{float}
+\usepackage{fullpage}
+
+\title{WORQ 11}
+
+\author{Theo Makler}
+
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\section{Problem A}
+
+Estimate the area of the trapezoid given the square unit shown below. Explain how you determined your estimate.
+
+To estimate the area,  measured the length of the square given, which was $\frac{1}{4}$" long on each side. From this, I measured the trapezoid's hight and length of the top and bottom sides. It was $2\frac{1}{2}$ units tall with the bottom being $10$ units and top $4$ units. After getting the measurements, I put them into the equation for the area of a trapezoid:
+$$A=\frac{1}{2}h(b_{1}+b_{2})$$
+$$A=\frac{1}{2}\times2\frac{1}{2}(10+4)$$
+$$A=\frac{1}{2}\times2\frac{1}{2}\times14$$
+$$A=\frac{1}{2}\times35$$
+$$A=17\frac{1}{2}$$
+
+From the equation for the area of a trapezoid, I found that the given trapezoid was about $17\frac{1}{2}$ units in area.
+
+\section{Problem C}
+
+Give the coordinates of the vertices of an isosceles triangle whose axis of symmetry is not parallel to either axis. Show that your triangle is isosceles.
+
+I know that if I make an isosceles triangle whose base has a slope of 1, the axis of symmetry will not be parallel to either axis. Because of this, I started with a base that went from $(1,1)$ to $(5,5)$. The axis of symmetry has to be perpendicular to the base (i.e. have a slope of $-1$) and has to pass through the midpoint, which is $(3,3)$. Using point-slope formula, the equation of the line is :
+
+$$y-3=-1(x-3)$$
+$$y-3=-x+3$$
+$$y=-x+6$$
+
+Any point along the axis of symmetry (except $(3,3)$) will make an isosceles triangle with $(1,1)$ and $(5,5)$. I chose $(0,6)$ because it is the y-intercept. 
+
+\begin{figure}[h]
+\centering
+\begin{pspicture}(0,-0.5)(5,6)
+\psset{unit=0.5}
+\psaxes[labels=none]{->}(11,11)[$x$,-90][$y$,180]
+\psline{-}(1,1)(5,5)
+\psline[linestyle=dashed,dash=3pt 2pt](6,0)(-3,9)
+\psline{-}(0,6)(1,1)
+\psline{-}(0,6)(5,5)
+\rput(-2,6){\psframebox*{$A(0,6)$}}
+\rput(3,1){\psframebox*{$B(1,1)$}}
+\rput(5,6){\psframebox*{$C(5,5)$}}
+\end{pspicture}
+\end{figure}
+
+The answer for these points is $A=(0,6)$, $B=(1,1)$ and $C=(5,5)$. See diagram on next page.
+
+\end{document}
