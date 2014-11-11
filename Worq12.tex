@@ -22,16 +22,34 @@
 
 \section{Problem A}
 
-Estimate the area of the trapezoid given the square unit shown below. Explain how you determined your estimate.
+Draw and give the dimensions of a rectangle and a triangle that have the same area. Explain why the two figures have the same area.
 
-To estimate the area,  measured the length of the square given, which was $\frac{1}{4}$" long on each side. From this, I measured the trapezoid's height and length of the top and bottom sides. It was $2\frac{1}{2}$ units tall with the bottom being $10$ units and top $4$ units. After getting the measurements, I put them into the equation for the area of a trapezoid:
-$$A=\frac{1}{2}h(b_{1}+b_{2})$$
-$$A=\frac{1}{2}\times2\frac{1}{2}(10+4)$$
-$$A=\frac{1}{2}\times2\frac{1}{2}\times14$$
-$$A=\frac{1}{2}\times35$$
-$$A=17\frac{1}{2}$$
+To start, I made a rectangle with an area of 16 square units. It looks like this:
 
-From the equation for the area of a trapezoid, I found that the given trapezoid was about $17\frac{1}{2}$ units in area.
+\begin{figure}[h]
+\centering
+\begin{pspicture}(0,-0.5)(5,3)
+\psset{unit=0.5}
+\psaxes[labels=none]{->}(11,5)[$x$,-90][$y$,180]
+\psline{-}(1,1)(9,1)
+\psline{-}(9,1)(9,3)
+\psline{-}(9,3)(1,3)
+\psline{-}(1,3)(1,1)
+\end{pspicture}
+\end{figure}
+
+As you can see, the figure has a hight of 2 and a length of 8, making its area 16 square units. Now, for the triangle to have an area of 16, the base could be 4 units long and the hight could be 8 units. The formula for the area of a triangle is $A=\frac{1}{2}(b\times h)$. If we plug in our values, we get $A=\frac{1}{2}(4\times 8)$. Simplified, it is $A=\frac{1}{2}(32)$, or $A=16$, which is the same area as the rectangle. The triangle would look like this:
+
+\begin{figure}[h]
+\centering
+\begin{pspicture}(0,-0.5)(5,5)
+\psset{unit=0.5}
+\psaxes[labels=none]{->}(6,10)[$x$,-90][$y$,180]
+\psline{-}(1,1)(5,1)
+\psline{-}(5,1)(3,9)
+\psline{-}(3,9)(1,1)
+\end{pspicture}
+\end{figure}
 
 \section{Problem C}
 
