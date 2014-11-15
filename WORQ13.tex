@@ -29,14 +29,40 @@ Casey claims he has divided the rectangle below into four equal areas. Terrell d
 \begin{pspicture}(0,-0.5)(2,2)
 \psset{unit=0.5}
 \psaxes[labels=none]{->}(11,4)[$x$,-90][$y$,180]
-\psline{-}(1,1)(10,1)
-\psline{-}(10,1)(10,3)
-\psline{-}(10,3)(1,3)
+\psline{-}(1,1)(9,1)
+\psline{-}(9,1)(9,3)
+\psline{-}(9,3)(1,3)
 \psline{-}(1,3)(1,1)
-\psline{-}(10,3)(1,1)
-\psline{-}(10,1)(1,3)
+\psline{-}(9,3)(1,1)
+\psline{-}(9,1)(1,3)
 \end{pspicture}
 \end{figure}
+
+To solve this problem, I labeled the lengths of the sides in the following way:
+
+\begin{figure}[h]
+\centering
+\begin{pspicture}(0,-0.5)(2,2)
+\psset{unit=0.5}
+\psaxes[labels=none]{->}(11,4)[$x$,-90][$y$,180]
+\psline{-}(1,1)(9,1)
+\psline{-}(9,1)(9,3)
+\psline{-}(9,3)(1,3)
+\psline{-}(1,3)(1,1)
+\psline{-}(9,3)(1,1)
+\psline{-}(9,1)(1,3)
+\rput(5,3.5){\psframebox*{$l$}}
+\rput(9.5,2){\psframebox*{$w$}}
+\end{pspicture}
+\end{figure}
+
+The length $l$ represents the length of the top and bottom sides, and the length $w$ represents the length of the two sides. With these lengths, we can write a series of equations to prove that the triangles are the same:
+
+$$\frac{1}{2} \left(l \times \frac{1}{2}w\right) = \frac{1}{2} \left(w \times \frac{1}{2}l\right)$$
+$$l \times \frac{1}{2}w = w \times \frac{1}{2}l$$
+$$\frac{1}{2}\times l \times w = \frac{1}{2}\times l \times w$$
+
+As these equations show, the two sets of triangles both have exactly the same area.
 
 \section{Problem C}
 
