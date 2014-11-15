@@ -1,0 +1,54 @@
+\documentclass[a4paper]{article}
+
+\usepackage[english]{babel} 
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage{pst-all}
+\usepackage{caption}
+\usepackage{float}
+\usepackage{fullpage}
+
+\title{WORQ 13}
+
+\author{Theo Makler}
+
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\section{Problem B}
+
+Casey claims he has divided the rectangle below into four equal areas. Terrell disagrees. Who is correct and why?
+
+\begin{figure}[h]
+\centering
+\begin{pspicture}(0,-0.5)(2,2)
+\psset{unit=0.5}
+\psaxes[labels=none]{->}(11,4)[$x$,-90][$y$,180]
+\psline{-}(1,1)(10,1)
+\psline{-}(10,1)(10,3)
+\psline{-}(10,3)(1,3)
+\psline{-}(1,3)(1,1)
+\psline{-}(10,3)(1,1)
+\psline{-}(10,1)(1,3)
+\end{pspicture}
+\end{figure}
+
+\section{Problem C}
+
+Laurie solves the inequality below in the following way:
+
+\begin{align*}
+mx+3\le& 8\\
+mx\le&5\\
+x\le&\frac{5}{m}
+\end{align*}
+Will Laurie's solution be correct for all values of $m$? Explain your reasoning.
+
+In short, no. If $m=0$, then you would have $x\le \frac{5}{0}$, which is undefined. For positive numbers, it obviously works, but for negative numbers, it does not. If we use $m=-1$ for her simplified equation, we get $x\le\frac{5}{-1}$, or $x\le-5$. However, if we put it in to the original equation, we get $-1x+3\le 8$, which simplifies to $-x\le 5$, which is $x\ge-5$. Because $x\le-5$ is not the same as $x\ge-5$, then using negative numbers in the equation does not work.
+
+\end{document}
