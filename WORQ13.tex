@@ -66,15 +66,52 @@ As these equations show, the two sets of triangles both have exactly the same ar
 
 \section{Problem C}
 
-Laurie solves the inequality below in the following way:
+The vertices of triangle $ABC$ have coordinates $A(-2,1)$, $B(4,3)$, and $C(6,-1)$. If $D$ is the origin, find the coordinates of $E$ and $F$ so that $ABC=DEF$. Justify your response. 
 
-\begin{align*}
-mx+3\le& 8\\
-mx\le&5\\
-x\le&\frac{5}{m}
-\end{align*}
-Will Laurie's solution be correct for all values of $m$? Explain your reasoning.
+To solve this problem, I first graphed the known points like so:
 
-In short, no. If $m=0$, then you would have $x\le \frac{5}{0}$, which is undefined. For positive numbers, it obviously works, but for negative numbers, it does not. If we use $m=-1$ for her simplified equation, we get $x\le\frac{5}{-1}$, or $x\le-5$. However, if we put it in to the original equation, we get $-1x+3\le 8$, which simplifies to $-x\le 5$, which is $x\ge-5$. Because $x\le-5$ is not the same as $x\ge-5$, then using negative numbers in the equation does not work.
+\begin{figure}[h]
+\centering
+\begin{pspicture}(-3,-3)(5,5)
+\psset{unit=0.5}
+\psaxes[labels=none]{<->}(0,0)(-6,-6)(7,7)[$x$,-90][$y$,180]
+\psline{-}(-2,1)(4,3)
+\psline{-}(4,3)(6,-1)
+\psline{-}(6,-1)(-2,1)
+\psdot(0,0)
+\rput(-2.5,1){\psframebox*{$A$}}
+\rput(4,3.5){\psframebox*{$B$}}
+\rput(6.5,-1){\psframebox*{$C$}}
+\rput(-0.6,-0.6){\psframebox*{$D$}}
+\end{pspicture}
+\end{figure}
+
+To create triangle $DEF$, lets make point $D$ be in the same place as point $A$, point $E$ in the same place as point $B$, and point $F$ the same as point $C$. From point $A$, point $B$ is over 6 units and up 2 units. From point $B$, point $C$ is 
+down 4 and across 2. If we use these in our second triangle, we find that point $E$ is at $(6,2)$, and point $F$ is at $(8,-2)$. If we graph the points, it looks like this:
+
+\begin{figure}[h]
+\centering
+\begin{pspicture}(-3,-3)(5,5)
+\psset{unit=0.5}
+\psaxes[labels=none]{<->}(0,0)(-6,-6)(7,7)[$x$,-90][$y$,180]
+\psline{-}(-2,1)(4,3)
+\psline{-}(4,3)(6,-1)
+\psline{-}(6,-1)(-2,1)
+\psdot(0,0)
+\psdot(6,2)
+\psdot(8,-2)
+\rput(-2.5,1){\psframebox*{$A$}}
+\rput(4,3.5){\psframebox*{$B$}}
+\rput(6.5,-1){\psframebox*{$C$}}
+\rput(-0.6,-0.6){\psframebox*{$D$}}
+\psline{-}(0,0)(6,2)
+\psline{-}(6,2)(8,-2)
+\psline{-}(8,-2)(0,0)
+\rput(6,2.6){\psframebox*{$E$}}
+\rput(8.6,-2){\psframebox*{$F$}}
+\end{pspicture}
+\end{figure}
+
+As these figures show, the points for the new triangle are $D(0,0)$, $E(6,2)$, and $F(8,-2)$. Diagrams on the next page.
 
 \end{document}
