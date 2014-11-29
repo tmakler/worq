@@ -11,7 +11,7 @@
 \usepackage{float}
 \usepackage{fullpage}
 
-\title{WORQ 13}
+\title{WORQ 14}
 
 \author{Theo Makler}
 
@@ -22,8 +22,70 @@
 
 \section{Problem B}
 
+Give the coordinates of a box that as four times the volume of the box below. Explain why your box has four times the volume of the given box. (The given box is 2cm by 4cm by 5cm)
+
+To start, i wrote the formula for the volume of a figure.
+$$length \times width \times height$$
+
+If I want to make a box with 4 times the volume of the original, I multiply the formula by 4.
+$$length \times width \times height \times 4$$
+
+If we put in the given values of the length, width, and height, then we get this:
+$$2\times4\times5\times4$$ 
+
+To make the new box that has 4 times the volume, I multiply one of the original sides by 4:
+$$8\times4\times5$$
+
+Now this box has 4 times the volume of the original box. To check, we can multiply the lengths together.
+
+Original Box:
+$$2\times4\times5=40$$
+
+New Box:
+$$8\times4\times5=160$$
+
+$$160=40\times4$$
+$$160=160$$
+
+As this shows, the new box with the lengths 8, 4, and 5 centimeters has 4 times the volume of the original box.
+
 \pagebreak
 
 \section{Problem C}
+
+Right triangles $ABC$ and $DEF$ have right angles $B$ and $F$. If line $AC$ is congruent to line $FD$, is it possible that triangle $ABC$ is congruent to triangle $DEF$? Why or why not?
+
+To start, I drew possible triangles, and labeled them with the known lengths, assuming that the triangles are identical.
+
+\begin{figure}[h]
+\centering
+\begin{pspicture}(-3,-3)(5,3)
+\psset{unit=0.5}
+\psline{-}(-4,0)(0,0)
+\psline{-}(0,0)(0,4)
+\psline{-}(0,4)(-4,0)
+
+\psline{-}(2,0)(6,0)
+\psline{-}(6,0)(6,4)
+\psline{-}(6,4)(2,0)
+
+\rput(-4.5,0){\psframebox*{$A$}}
+\rput(0,-.5){\psframebox*{$B$}}
+\rput(0,4.5){\psframebox*{$C$}}
+\rput(1.5,0){\psframebox*{$D$}}
+\rput(6,4.5){\psframebox*{$E$}}
+\rput(6,-0.5){\psframebox*{$F$}}
+
+\rput(-2.5,3){\psframebox*{$x$}}
+\rput(4,-0.5){\psframebox*{$x$}}
+\rput(-2,-0.5){\psframebox*{$x$}}
+\rput(3.5,3){\psframebox*{$x$}}
+\rput(0.5,2){\psframebox*{$y$}}
+\rput(6.5,2){\psframebox*{$y$}}
+
+\end{pspicture}
+\end{figure}
+
+I have labeled these triangles as such because, if line $AC$ is the same length as line $DF$, lines $AB$ and $DF$ must also be that length for the triangles to be congruent. However, lines $CB$ and $EF$ must be longer than the other lines, so they are a different variable. Seeing that these two triangles have exactly the same dimensions, they must be congruent.
 
 \end{document}
