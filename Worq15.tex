@@ -11,7 +11,7 @@
 \usepackage{float}
 \usepackage{fullpage}
 
-\title{WORQ 14}
+\title{WORQ 15}
 
 \author{Theo Makler}
 
@@ -20,36 +20,20 @@
 \begin{document}
 \maketitle
 
-\section{Problem B}
+\section{Problem A}
 
-Give the coordinates of a box that as four times the volume of the box below. Explain why your box has four times the volume of the given box. (The given box is 2cm by 4cm by 5cm)
+Give values for $a$, $b$, and $c$ so that the volume of the right triangular prism is the same as the volume of a cube with side length 4. Show that the volume of your prism is the same as the volume of the cube.
 
-To start, i wrote the formula for the volume of a figure.
-$$length \times width \times height$$
+To start, I found the volume of the cube. If the side length is 4, then the cube has a volume of $64^3$ units. Next, I wrote down the formula for the volume of a triangular prism, with $a$, $b$, and $c$ being the length, width, and height: 
+$$\frac{1}{2} \left(a \times b \right) \times c$$
 
-If I want to make a box with 4 times the volume of the original, I multiply the formula by 4.
-$$length \times width \times height \times 4$$
+Now, if we want this to have the same volume as the cube, we make it equal to 64:
+$$\frac{1}{2} \left(a \times b \right) \times c=64$$
+From here, we just simplify:
+$$ \left(a \times b \right) \times c = 128$$
+$$a \times b \times c = 128$$
 
-If we put in the given values of the length, width, and height, then we get this:
-$$2\times4\times5\times4$$ 
-
-To make the new box that has 4 times the volume, I multiply one of the original sides by 4:
-$$8\times4\times5$$
-
-Now this box has 4 times the volume of the original box. To check, we can multiply the lengths together.
-
-Original Box:
-$$2\times4\times5=40$$
-
-New Box:
-$$8\times4\times5=160$$
-
-$$160=40\times4$$
-$$160=160$$
-
-As this shows, the new box with the lengths 8, 4, and 5 centimeters has 4 times the volume of the original box.
-
-\pagebreak
+As this shows, as long as the side's product is equal to 128, the prism will have the same volume as the cube. For this, I will let $a=4$, $b=4$, and $c=8$. If we do $4\times4\times8$, we get 128.
 
 \section{Problem C}
 
