@@ -24,7 +24,7 @@
 
 Give values for $a$, $b$, and $c$ so that the volume of the right triangular prism is the same as the volume of a cube with side length 4. Show that the volume of your prism is the same as the volume of the cube.
 
-To start, I found the volume of the cube. If the side length is 4, then the cube has a volume of $64^3$ units. Next, I wrote down the formula for the volume of a triangular prism, with $a$, $b$, and $c$ being the length, width, and height: 
+To start, I found the volume of the cube. If the side length is 4, then the cube has a volume of 64 cubic units. Next, I wrote down the formula for the volume of a triangular prism, with $a$, $b$, and $c$ being the length, width, and height: 
 $$\frac{1}{2} \left(a \times b \right) \times c$$
 
 Now, if we want this to have the same volume as the cube, we make it equal to 64:
@@ -35,48 +35,47 @@ $$a \times b \times c = 128$$
 
 As this shows, as long as the side's product is equal to 128, the prism will have the same volume as the cube. For this, I will let $a=4$, $b=4$, and $c=8$. If we do $4\times4\times8$, we get 128.
 
-\pagebreak
-
 \section{Problem C}
 
 Give a quadratic function and a non-constant linear function whose graphs do not intersect. Explain how you know that the graphs of your two functions do not intersect.
 
-If I made a quadratic function that was $y=x^2$, then the graph would look like this:
+If I made a quadratic function $y=x^2$, then the graph would look like this:
 
 \begin{figure}[h]
 \centering
-\begin{pspicture}(-3,-3)(5,5)
+\begin{pspicture}(-3,-2)(5,5)
 \psset{unit=0.5}
 \psplot[plotpoints=200]{-3}{3}{x 2 exp}
-\psaxes[labels=none]{<->}(0,0)(-6,-6)(7,7)[$x$,-90][$y$,180]
+\psaxes[labels=none]{<->}(0,0)(-6,-5)(7,7)[$x$,-90][$y$,180]
 \end{pspicture}
 \end{figure}
-
-If I make a non-constant linear function that never intersects this graph, it could look like this:
-
-\begin{figure}[h]
-\centering
-\begin{pspicture}(-3,-3)(5,5)
-\psset{unit=0.5}
-\psaxes[labels=none]{<->}(0,0)(-6,-6)(7,7)[$x$,-90][$y$,180]
-\psline{-}(0,-1)(6,-3)
-\psline{-}(0,-1)(-6,1)
-\end{pspicture}
-\end{figure}
-
-If we put the two together, it would look like this:
 
 \pagebreak
 
+If I make the non-constant linear function $y=x-1$, it would look like this:
+
 \begin{figure}[h]
 \centering
 \begin{pspicture}(-3,-3)(5,5)
 \psset{unit=0.5}
 \psaxes[labels=none]{<->}(0,0)(-6,-6)(7,7)[$x$,-90][$y$,180]
-\psline{-}(0,-1)(6,-3)
-\psline{-}(0,-1)(-6,1)
+\psline{-}(0,-1)(6,5)
+\psline{-}(0,-1)(-5,-6)
 \end{pspicture}
 \end{figure}
 
-At point $(-3,0)$, the non-constant linear function it at its x-intercept. At $x=-3$, the quadratic function is at $(-3, 9)$. Because the y-values will get exponentially higher, and the linear function is below the quadratic function, the linear function will never intersect the quadratic function.
+If we put the two together, it looks like this:
+
+\begin{figure}[h]
+\centering
+\begin{pspicture}(-3,-3)(5,5)
+\psset{unit=0.5}
+\psaxes[labels=none]{<->}(0,0)(-6,-6)(7,7)[$x$,-90][$y$,180]
+\psline{-}(0,-1)(6,5)
+\psline{-}(0,-1)(-5,-6)
+\psplot[plotpoints=200]{-3}{3}{x 2 exp}
+\end{pspicture}
+\end{figure}
+
+The quadratic function is positive at all times, and the linear function is positive when $x\ge1$. From this, we know that they cannot intersect if $x\le1$. When $x=1$, the quadratic function is at $(1, 1)$, and the linear function is at $(1,0)$. Because the y-values of the quadratic function will get exponentially higher, and the linear function is below the quadratic function, the linear function will never intersect the quadratic function.
 \end{document}
