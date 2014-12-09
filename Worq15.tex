@@ -35,68 +35,51 @@ $$a \times b \times c = 128$$
 
 As this shows, as long as the side's product is equal to 128, the prism will have the same volume as the cube. For this, I will let $a=4$, $b=4$, and $c=8$. If we do $4\times4\times8$, we get 128.
 
+\pagebreak
+
 \section{Problem C}
 
-Right triangles $ABC$ and $DEF$ have right angles $B$ and $F$. If line $AC$ is congruent to line $FD$, is it possible that triangle $ABC$ is congruent to triangle $DEF$? Why or why not?
+Give a quadratic function and a non-constant linear function whose graphs do not intersect. Explain how you know that the graphs of your two functions do not intersect.
 
-To start, I drew possible triangles, and labeled them with the known lengths, assuming that the triangles are identical.
-
-\begin{figure}[h]
-\centering
-\begin{pspicture}(-3,-1)(5,3)
-\psset{unit=0.5}
-\psline{-}(-4,0)(0,0)
-\psline{-}(0,0)(0,4)
-\psline{-}(0,4)(-4,0)
-
-\psline{-}(2,0)(6,0)
-\psline{-}(6,0)(6,4)
-\psline{-}(6,4)(2,0)
-
-\rput(-4.5,0){\psframebox*{$A$}}
-\rput(0,-.5){\psframebox*{$B$}}
-\rput(0,4.5){\psframebox*{$C$}}
-\rput(1.5,0){\psframebox*{$D$}}
-\rput(6,4.5){\psframebox*{$E$}}
-\rput(6,-0.5){\psframebox*{$F$}}
-
-\rput(-2.5,3){\psframebox*{$x$}}
-\rput(4,-0.5){\psframebox*{$x$}}
-\end{pspicture}
-\end{figure}
-
-I have labeled these triangles as such because, if line $AC$ is the same length as line $DF$, it can be labeled with a variable. If the two triangles are congruent, then lines $AB$ and $DE$ must be the same as $AC$ and $DF$, so those can be labeled with the same variable. However, the lines $BC$ and $EF$ must be a different length, so they are labeled with a different variable like so:
+If I made a quadratic function that was $y=x^2$, then the graph would look like this:
 
 \begin{figure}[h]
 \centering
-\begin{pspicture}(-3,-1)(5,3)
+\begin{pspicture}(-3,-3)(5,5)
 \psset{unit=0.5}
-\psline{-}(-4,0)(0,0)
-\psline{-}(0,0)(0,4)
-\psline{-}(0,4)(-4,0)
-
-\psline{-}(2,0)(6,0)
-\psline{-}(6,0)(6,4)
-\psline{-}(6,4)(2,0)
-
-\rput(-4.5,0){\psframebox*{$A$}}
-\rput(0,-.5){\psframebox*{$B$}}
-\rput(0,4.5){\psframebox*{$C$}}
-\rput(1.5,0){\psframebox*{$D$}}
-\rput(6,4.5){\psframebox*{$E$}}
-\rput(6,-0.5){\psframebox*{$F$}}
-
-\rput(-2.5,3){\psframebox*{$x$}}
-\rput(4,-0.5){\psframebox*{$x$}}
-\rput(-2,-0.5){\psframebox*{$x$}}
-\rput(3.5,3){\psframebox*{$x$}}
-\rput(0.5,2){\psframebox*{$y$}}
-\rput(6.5,2){\psframebox*{$y$}}
+\savedata {\mydata}[
+{{0,0}, {1,1}, {2,4}}]
+\dataplot[plotstyle=curve] {\mydata}
+\psaxes[labels=none]{<->}(0,0)(-6,-6)(7,7)[$x$,-90][$y$,180]
 \end{pspicture}
 \end{figure}
 
-Using the Pythagorean Theorem, we can see that this configuration is impossible, because $x^2 + y^2 = x^2$, meaning that $y^2 = 0$. This would make the figure a line, not a triangle, rendering it impossible for triangles $ABC$ and $DEF$ to be congruent.
+If I make a non-constant linear function that never intersects this graph, it could look like this:
 
+\begin{figure}[h]
+\centering
+\begin{pspicture}(-3,-3)(5,5)
+\psset{unit=0.5}
+\psaxes[labels=none]{<->}(0,0)(-6,-6)(7,7)[$x$,-90][$y$,180]
+\psline{-}(0,-1)(6,-3)
+\psline{-}(0,-1)(-6,-1)
+\end{pspicture}
+\end{figure}
 
+If we put the two together, it would look like this:
+
+\pagebreak
+
+\begin{figure}[h]
+\centering
+\begin{pspicture}(-3,-3)(5,5)
+\psset{unit=0.5}
+\psaxes[labels=none]{<->}(0,0)(-6,-6)(7,7)[$x$,-90][$y$,180]
+\psline{-}(0,-1)(6,-3)
+\psline{-}(0,-1)(-6,-1)
+\end{pspicture}
+\end{figure}
+
+Because it is a quadratic function, and the y-intercept is at $(0,0)$, there will not be a point on the graph that goes below $(0,0)$. So, any line below point $(0,0)$ will never touch any point on the quadratic function.
 
 \end{document}
