@@ -62,7 +62,7 @@ If I make a non-constant linear function that never intersects this graph, it co
 \psset{unit=0.5}
 \psaxes[labels=none]{<->}(0,0)(-6,-6)(7,7)[$x$,-90][$y$,180]
 \psline{-}(0,-1)(6,-3)
-\psline{-}(0,-1)(-6,-1)
+\psline{-}(0,-1)(-6,1)
 \end{pspicture}
 \end{figure}
 
@@ -76,10 +76,9 @@ If we put the two together, it would look like this:
 \psset{unit=0.5}
 \psaxes[labels=none]{<->}(0,0)(-6,-6)(7,7)[$x$,-90][$y$,180]
 \psline{-}(0,-1)(6,-3)
-\psline{-}(0,-1)(-6,-1)
+\psline{-}(0,-1)(-6,1)
 \end{pspicture}
 \end{figure}
 
-Because it is a quadratic function, and the y-intercept is at $(0,0)$, there will not be a point on the graph that goes below $(0,0)$. So, any line below point $(0,0)$ will never touch any point on the quadratic function.
-
+At point $(-3,0)$, the non-constant linear function it at its x-intercept. At $x=-3$, the quadratic function is at $(-3, 9)$. Because the y-values will get exponentially higher, and the linear function is below the quadratic function, the linear function will never intersect the quadratic function.
 \end{document}
