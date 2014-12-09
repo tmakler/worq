@@ -47,9 +47,7 @@ If I made a quadratic function that was $y=x^2$, then the graph would look like 
 \centering
 \begin{pspicture}(-3,-3)(5,5)
 \psset{unit=0.5}
-\savedata {\mydata}[
-{{0,0}, {1,1}, {2,4}}]
-\dataplot[plotstyle=curve] {\mydata}
+\psplot[plotpoints=200]{-3}{3}{x 2 exp}
 \psaxes[labels=none]{<->}(0,0)(-6,-6)(7,7)[$x$,-90][$y$,180]
 \end{pspicture}
 \end{figure}
