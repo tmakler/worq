@@ -21,7 +21,52 @@
 \maketitle
 
 \section{Problem B}
-A trapezoid with three sides that are 1 unit long and one side that is 
+A trapezoid with three sides that are 1 unit long and one side that is 2 units long creates a quadrilateral with exactly 3 congruent sides.
+
+When I started this problem, I knew that the quadrilateral had to be a trapezoid because if the figure has 3 congruent sides, then one side must be either shorter or longer. I made a quadrilateral with the top and sides all one unit long:
+
+\begin{figure}[h]
+\centering
+\begin{pspicture}(.25,.25)(.25,.25)
+\psset{unit=1}
+\psdot(-.5,.85)
+\psdot(.5,.85)
+\psdot(-1,0)
+\psdot(1,0)
+\psline{-}(-.5,.85)(.5,.85)
+\psline{-}(-1,0)(1,0)
+\psline{-}(-.5,.85)(-1,0)
+\psline{-}(.5,.85)(1,0)
+\end{pspicture}
+\end{figure}
+
+I made the bottom base have a length of 2 because I know that 2 is greater than one:
+
+\begin{figure}[h]
+\centering
+\begin{pspicture}(.25,1.5)(.25,.25)
+\psset{unit=1.5}
+\psdot(-.5,.85)
+\psdot(.5,.85)
+\psdot(-1,0)
+\psdot(1,0)
+\psline{-}(-.5,.85)(.5,.85)
+\psline{-}(-1,0)(1,0)
+\psline{-}(-.5,.85)(-1,0)
+\psline{-}(.5,.85)(1,0)
+\psline[linestyle=dashed,dash=3pt 2pt](-.5,.85)(-.5,0)
+\psline[linestyle=dashed,dash=3pt 2pt](.5,.85)(.5,0)
+\rput(-1,.5){\psframebox*{$1$}}
+\rput(1,.5){\psframebox*{$1$}}
+\rput(0,1){\psframebox*{$1$}}
+\rput(0,-.15){\psframebox*{$2$}}
+\rput(0,1.2){\psframebox*{$$}}
+\rput(0,1.2){\psframebox*{$$}}
+\end{pspicture}
+\end{figure}
+
+As you can see, this is a quadrilateral with exactly 3 congruent sides.
+
 \section{Problem C}
 
 \section{Problem D}
