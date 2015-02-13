@@ -20,11 +20,86 @@
 \begin{document}
 \maketitle
 
-\section{Problem B}
+\section{Problem A}
 
+The equation $y=-x-5$ creates a line that goes through the point $(0,-5)$ and contains points in the second quadrant.
 
+To solve this problem, I made the $y$-intercept $-5$ so that the line contained the point $(0,-5)$. So far, the graph looks like this:
+
+\begin{figure}[h]
+\centering
+\begin{pspicture}(.25,2)(.25,-2)
+\psset{unit=.3}
+\psaxes[labels=none]{->}(0,0)(-7,-7)[$x$,-90][$y$,180]
+\psaxes[labels=none]{->}(0,0)(7,7)[$x$,-90][$y$,180]
+\psdot(0,-5)
+\end{pspicture}
+\end{figure}
+
+Now, I made a line with a slope of $-1$ so that the line went through the second quadrant.
+
+\begin{figure}[h]
+\centering
+\begin{pspicture}(.25,2)(.25,-2)
+\psset{unit=.3}
+\psaxes[labels=none]{->}(0,0)(-7,-7)[$x$,-90][$y$,180]
+\psaxes[labels=none]{->}(0,0)(7,7)[$x$,-90][$y$,180]
+\psdot(0,-5)
+\psline{-}(2,-7)(-7,2)
+\end{pspicture}
+\end{figure}
+
+As you can see, the line  $y=-x-5$ creates a line that goes through the point $(0,-5)$ and contains points in the second quadrant.
+
+\pagebreak
 
 \section{Problem C}
+
+The coordinates $a(-5,5)$ and $b(5,-5)$ make the line segment $ab$ run through the origin. 
+
+To make the problem relatively easier, I made the line segment $ab$'s slope $-1$ so the points would be easy to find. I first plotted the line on the graph.
+
+\begin{figure}[h]
+\centering
+\begin{pspicture}(.25,2)(.25,-2)
+\psset{unit=.3}
+\psaxes[labels=none]{->}(0,0)(-7,-7)[$x$,-90][$y$,180]
+\psaxes[labels=none]{->}(0,0)(7,7)[$x$,-90][$y$,180]
+\psline{-}(-7,7)(7,-7)
+\end{pspicture}
+\end{figure}
+
+I knew that if I picked a point from Quadrant II and a point from Quadrant IV on this line, the points would satisfy the conditions. I picked $(-5,5)$ and $(5,-5)$.
+
+\begin{figure}[h]
+\centering
+\begin{pspicture}(.25,2)(.25,-2)
+\psset{unit=.3}
+\psaxes[labels=none]{->}(0,0)(-7,-7)[$x$,-90][$y$,180]
+\psaxes[labels=none]{->}(0,0)(7,7)[$x$,-90][$y$,180]
+\psline{-}(-5,5)(5,-5)
+\psdot(5,-5)
+\psdot(-5,5)
+\end{pspicture}
+\end{figure}
+
+As this shows, the points $a(-5,5)$ and $b(5,-5)$ make the line segment $ab$ run through the origin.
+
+\section{Problem D}
+
+The values $a=-5$ and $m=3$ make the expression $a^m$ less than 0.
+
+Starting out, I knew that a negative number multiplied an odd number of times will create a negative number. For this problem, I just have to make $a$ negative and $m$ odd for $a^m$ to be negative. I chose $a=-5$ and $m=3$.
+$$a^m$$
+$$(-5)^3$$
+$$-125$$
+These equations show that the values $a=-5$ and $m=3$ used in the expression $a^m$ make the expression negative.
+
+
+
+
+
+
 
 
 
